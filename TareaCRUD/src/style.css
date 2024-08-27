@@ -1,0 +1,195 @@
+/* General Body Styles */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Header */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Container for form and table */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Form styles */
+.formulario {
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1;
+    max-width: 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.formulario input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1em;
+    color: #333;
+}
+
+.formulario input[type="submit"] {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 160px;
+    margin-top: 10px;
+}
+
+#consultar {
+    background-color: #2980b9;
+    color: white;
+}
+
+#cargar {
+    background-color: #27ae60;
+    color: white;
+}
+
+#modificar {
+    background-color: #e67e22;
+    color: white;
+}
+
+#eliminar {
+    background-color: #c0392b;
+    color: white;
+}
+
+.formulario input[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+/* Table Container Styles */
+.table-container {
+    flex: 2;
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 55%;
+    min-width: 300px;
+}
+
+.table-container h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+th {
+    background-color: #f8f8f8;
+    font-weight: 600;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+/* Button Styles */
+button {
+    padding: 8px 15px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario, .table-container {
+        max-width: 100%;
+    }
+}
+
+/* Alert Styles */
+.alerta {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.alerta button.close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+    float: right;
+}
+
+.alerta button.close:hover {
+    opacity: 0.5;
+}
